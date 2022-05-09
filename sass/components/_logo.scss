@@ -1,0 +1,17 @@
+.logo {
+    @include text(26px, bold, 1.19, null);
+    font-family: 'Raleway';
+    color: #000000;
+
+    &--properties {
+        margin-right: 93px;
+    }
+
+    &--accent {
+        color: var(--accent-color);
+    }
+
+    &--second__accent {
+        color: var(--second-accent-color);
+    }
+}

@@ -1,0 +1,13 @@
+@mixin text($fs, $fw, $lh, $ls) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+    letter-spacing: $ls;
+}
+
+@mixin side($l, $t, $w, $h) {
+    left: $l;
+    top: $t;
+    width: $w;
+    height: $h;
+}
