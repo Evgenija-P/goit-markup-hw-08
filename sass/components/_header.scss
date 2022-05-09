@@ -1,19 +1,25 @@
 .header {
-    padding: 16px 0px;
-    border-bottom: 1px solid #ECECEC;
+    padding-bottom: 16px;
+    padding-top: 16px;
+
+    @media screen and (min-width: 768px) {
+            padding-bottom: 26px;
+            padding-top: 26px;
+        }
+
+    @media screen and (min-width:1200px) {
+            padding-top: 24px;
+            padding-bottom: 25px;
+        }
 
     &--properties {
         margin: 0;
-    }
+        }
 
+    border-bottom: 1px solid #ECECEC;
+
+}
     
-}
-
-@media screen and (min-widht: 768px) {
-    .header {
-    padding: 26px 0px;}
-}
-
 
 // .menu {
 //     display: flex;
