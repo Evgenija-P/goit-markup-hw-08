@@ -1,116 +1,105 @@
 .header {
-    padding-bottom: 16px;
-    padding-top: 16px;
-
-    @media screen and (min-width: 768px) {
-            padding-bottom: 26px;
-            padding-top: 26px;
-        }
-
-    @media screen and (min-width:1200px) {
-            padding-top: 24px;
-            padding-bottom: 25px;
-        }
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
 
     &--properties {
         margin: 0;
+    }
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+
+    &__list,
+    &__page {
+        display: flex;
+        align-items: center;
+    }
+
+    &__container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__page {
+        @include text(14px, 500, 1.14, null);
+        position: relative;
+        font-family: Roboto;
+
+        color: var(--basic-color);
+        transition-property: сolor;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &--status::after {
+            display: inline-block;
+            position: absolute;
+            @include side(0px, 46px, 100%, 4px);
+            content: '';
+        
+            background: var(--accent-color);
+            border-radius: 2px;
+        
+            opacity: 1;
         }
 
-    border-bottom: 1px solid #ECECEC;
+        &--status {
+            color: var(--accent-color);
+        }
 
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+    }
+
+    &__item:not(:last-child){
+        margin-right: 50px;
+        }
 }
+
+.contacts {
+    &__list{
+    display: flex;
+    align-items: center;
+    position: relative;
+    }
+
+    &__link {
+        @include text(14px, 500, 1.14, null);
+        font-family: Roboto;
+
+        color: var(--second-color);
+        transition-property: сolor;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+    }
 
-// .menu {
-//     display: flex;
-//     align-items: center;
-
-//     &__list,
-//     &__page {
-//         display: flex;
-//         align-items: center;
-//     }
-
-//     &__page {
-//         @include text(14px, 500, 1.14, null);
-//         position: relative;
-//         font-family: Roboto;
-
-//         color: var(--basic-color);
-//         transition-property: сolor;
-//         transition-duration: 250ms;
-//         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-//         &--status::after {
-//             display: inline-block;
-//             position: absolute;
-//             @include side(46px, 0px, 100%, 4px);
-//             content: '';
-        
-//             background: var(--accent-color);
-//             border-radius: 2px;
-        
-//             opacity: 1;
-//         }
-
-//         &--status {
-//             color: var(--accent-color);
-//         }
-
-//         &:hover,
-//         &:focus {
-//             color: var(--accent-color);
-//         }
-//     }
-
-//     &__item:not(:last-child){
-//         margin-right: 50px;
-//         }
-// }
-
-// .contacts {
-//     &__list{
-//     display: flex;
-//     align-items: center;
-//     position: relative;
-
-//     &--properties {
-//         margin-left: auto;
-//         }
-//     }
-
-//     &__link {
-//         @include text(14px, 500, 1.14, null);
-//         font-family: Roboto;
-
-//         color: var(--second-color);
-//         transition-property: сolor;
-//         transition-duration: 250ms;
-//         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &__icon {
+        fill: currentColor;
+        transition-property: full;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
-//         &:hover,
-//         &:focus {
-//             color: var(--accent-color);
-//         }
-//     }
-
-//     &__icon {
-//         fill: currentColor;
-//         transition-property: full;
-//         transition-duration: 250ms;
-//         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &--properties {
+            margin-right: 10px;
+        }
     
-//         &--properties {
-//             margin-right: 10px;
-//         }
-    
-//         &:hover,
-//         &:focus {
-//             fill: var(--accent-color);
-//         }
-//     }
+        &:hover,
+        &:focus {
+            fill: var(--accent-color);
+        }
+    }
 
-//     &__item:not(:last-child) {
-//         margin-right: 50px;
-//     }
-// }
+    &__item:not(:last-child) {
+        margin-right: 50px;
+    }
+}
