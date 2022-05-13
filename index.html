@@ -17,15 +17,12 @@
         <div class="container">
         <nav class="menu">
         <a href="./" class="logo logo--properties link" lang="en"><span class="logo--accent">Web</span>Studio</a>       
-        <button 
-            type="button" 
-            class="menu__btn is-open" 
-            aria-controls="menu__container"
-            aria-expanded="false" 
-            data-menu-button>
-            <div class="menu__btn--conteiner"></div>
+        <button type="button" class="menu-open-btn">
         </button>
-            <div class="menu__container" id="menu__container" data-menu> 
+            <div class="menu__container is-hidden"> 
+        <button type="button" class="menu-close-btn">
+        </button>
+                <div class="menu__list__cotnainer">
                 <ul class="menu__list list">
                     <li class="menu__item"> <a href="./" class="menu__page menu__page--status link">Студия</a></li>
                     <li class="menu__item"> <a href="./portfolio.html" class="menu__page link">Портфолио</a></li>
@@ -33,18 +30,20 @@
                 </ul>
                 <ul class="contacts__list contacts__list--properties list">
                     <li class="contacts__item">
-                    <a href="mailto:info@devstudio.com" class="contacts__link link">
+                    <a href="tel:+380961111111" class="contacts__link contacts__tell link">
+                    <svg class="contacts__icon contacts__icon--properties" width="10px" height="16px">
+                    <use href="./images/symbol-defs.svg#icon-tell"></use>
+                    </svg>+38 096 111 11 11</a>
+                    </li>
+                    <li class="contacts__item">
+                    <a href="mailto:info@devstudio.com" class="contacts__link contacts__mail link">
                         <svg class="contacts__icon contacts__icon--properties" width="16px" height="12px">
                         <use href="./images/symbol-defs.svg#icon-mail"></use>
                         </svg>info@devstudio.com</a>
                     </li>
-                    <li class="contacts__item">
-                    <a href="tel:+380961111111" class="contacts__link link">
-                        <svg class="contacts__icon contacts__icon--properties" width="10px" height="16px">
-                        <use href="./images/symbol-defs.svg#icon-tell"></use>
-                        </svg>+38 096 111 11 11</a>
-                    </li>
+
                 </ul>
+                </div>
             </div>
         </nav>
         </div>
@@ -58,7 +57,7 @@
     </div>
 </section> -->
 <!-- Section-2 -->
-<!-- <section class="features section">
+<section class="features section">
     <div class="container">
     <ul class="features__list list">
         <li class="features__item">
@@ -99,7 +98,7 @@
         </li>
     </ul>
     </div>
-</section> -->
+</section>
 <!-- <section class="projects-list__section section">
     <div class="projects-list__container container">
     <h2 class="projects-list__title title">Чем мы занимаемся</h2>
@@ -312,8 +311,8 @@
                     <use href="./images/symbol-defs.svg#icon-client-6"></use>
                 </svg></a></li>
         </ul>
-    </div> -->
-</section>
+    </div>
+</section> -->
 </main>
 <!-- <!-- <footer class="footer">
     <div class="container">
@@ -374,7 +373,7 @@
                 </div>
             </li>
         </ul>
-    </div> -->
+    </div>
 </footer> -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">

@@ -1,13 +1,28 @@
-
-.menu__btn--conteiner {
+.menu-open-btn {
     display: block;
+    margin-left: auto;
     width: 40px;
     height: 40px;
     background-image: url("/images/menu_40px.jpg");
 }
 
-.menu__btn--conteiner:hover,
-.menu__btn--conteiner:focus {
+.menu-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    background-image: url("/images/close_40px.jpg");
+}
+
+.menu-open-btn:hover,
+.menu-open-btn:focus {
     cursor: pointer;
     background-image: url("/images/menu_40px-act.jpg");
+}
+
+.menu-close-btn:hover,
+.menu-close-btn:focus {
+    cursor: pointer;
+    background-image: url("/images/close_40px-act.jpg");
 }
