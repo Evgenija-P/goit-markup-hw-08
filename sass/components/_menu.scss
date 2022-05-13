@@ -1,0 +1,13 @@
+
+.menu__btn--conteiner {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url("/images/menu_40px.jpg");
+}
+
+.menu__btn--conteiner:hover,
+.menu__btn--conteiner:focus {
+    cursor: pointer;
+    background-image: url("/images/menu_40px-act.jpg");
+}
