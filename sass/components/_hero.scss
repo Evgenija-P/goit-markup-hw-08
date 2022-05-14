@@ -9,17 +9,17 @@
     background-image: linear-gradient(to right,
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)),
-    url("/images/mobile/hero-m-1x.jpg");
+    url("../images/mobile/hero-m-1x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: linear-gradient(to right,
-                        rgba(47, 48, 58, 0.4),
-                        rgba(47, 48, 58, 0.4)),
-                    url("/images/mobile/hero-m-2x.jpg");
+        background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url("../images/mobile/hero-m-2x.jpg");
                 background-repeat: no-repeat;
                 background-size: cover;
         }
@@ -29,7 +29,7 @@
         background-image: linear-gradient(to right,
                     rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                url("/images/tablet/hero-t-1x.jpg");
+                url("../images/tablet/hero-t-1x.jpg");
             background-repeat: no-repeat;
             background-size: cover;
         
@@ -39,7 +39,7 @@
                 background-image: linear-gradient(to right,
                         rgba(47, 48, 58, 0.4),
                         rgba(47, 48, 58, 0.4)),
-                    url("/images/tablet/hero-t-2x.jpg");
+                    url("../images/tablet/hero-t-2x.jpg");
                 background-repeat: no-repeat;
                 background-size: cover;
             }
@@ -52,7 +52,7 @@
         background-image: linear-gradient(to right,
                     rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                url("/images/desktop/hero-d-1x.jpg");
+                url("../images/desktop/hero-d-1x.jpg");
             background-repeat: no-repeat;
             background-size: cover;
 
@@ -62,7 +62,7 @@
                 background-image: linear-gradient(to right,
                         rgba(47, 48, 58, 0.4),
                         rgba(47, 48, 58, 0.4)),
-                    url("/images/desktop/hero-d-2x.jpg");
+                    url("../images/desktop/hero-d-2x.jpg");
                 background-repeat: no-repeat;
                 background-size: cover;
             }
