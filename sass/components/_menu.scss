@@ -4,7 +4,7 @@
     width: 40px;
     height: 40px;
     outline: none;
-    background-image: url("/images/menu_40px.jpg");
+    background-image: url("../images/menu_40px.jpg");
     @media screen and (min-width: 768px) {
         display: none;
     }
@@ -17,7 +17,7 @@
     width: 40px;
     height: 40px;
     outline: none;
-    background-image: url("/images/close_40px.jpg");
+    background-image: url("../images/close_40px.jpg");
     @media screen and (min-width: 768px) {
             display: none;
         }
@@ -26,11 +26,11 @@
 .menu-open-btn:hover,
 .menu-open-btn:focus {
     cursor: pointer;
-    background-image: url("/images/menu_40px-act.jpg");
+    background-image: url("../images/menu_40px-act.jpg");
 }
 
 .menu-close-btn:hover,
 .menu-close-btn:focus {
     cursor: pointer;
-    background-image: url("/images/close_40px-act.jpg");
+    background-image: url("../images/close_40px-act.jpg");
 }
