@@ -2,7 +2,7 @@
 @import "./utils/_mixins";
 @import "./base/_reset";
 @import "./base/_typical";
-@import "./components/menu";
+@import "./components/_menu";
 @import "./components/_header";
 @import "./components/_logo";
 @import "./components/_footer";
@@ -13,7 +13,6 @@
 @import "./components/_projects";
 @import "./components/_team";
 @import "./components/_clients";
-@import "./components/_backdrop";
 @import "./components/_filter";
 @import "./components/_portfolio";
-@import "./components/forms"
+@import "./components/backdrop-forms"

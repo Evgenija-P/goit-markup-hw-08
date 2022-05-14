@@ -28,6 +28,12 @@
         border-radius: 4px;
         border: none;
 
+        margin-top: 20px;
+
+        @media screen and (min-width: 1200px) {
+            margin-top: 0;
+        }
+
         &__link {
             display: flex;
             justify-content: center;
