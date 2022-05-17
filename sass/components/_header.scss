@@ -3,8 +3,13 @@
     padding-bottom: 16px;
     border-bottom: 1px solid #ECECEC;
 
-    @media screen and (min-width: 767px) {
-        padding-top: 26px;
+    @media screen and (min-width: 768px) {
+        padding-top: 21px;
+        padding-bottom: 21px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 25px;
         padding-bottom: 26px;
     }
 
@@ -130,7 +135,7 @@
     &__item {
         @media screen and (max-width: 767px) {
                 &:not(:last-child) {
-                        margin-bottom: 32px;
+                margin-bottom: 32px;
                     }
             }
     }
@@ -160,8 +165,12 @@
         @include text(34px, 500, 1.18, 0.02em);
 
         @media screen and (min-width: 768px) {
-        @include text(14px, 500, 1.14, 0.02em);
+        @include text(12px, 500, 1.17, 0.02em);
         }
+
+        @media screen and (min-width: 1200px) {
+        @include text(14px, 500, 1.14, 0.02em);
+            }
         font-family: Roboto;
         color: var(--second-color);
         
@@ -174,9 +183,6 @@
             color: var(--accent-color);
         }
 
-        @media screen and (min-width: 768px) {
-            @include text(14px, 500, 1.14, 0.02em);
-        }
     }
 
     &__tell {

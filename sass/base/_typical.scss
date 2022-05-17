@@ -29,7 +29,12 @@
 }
 
 .title {
-    @include text(36px, bold, 1.17, 0.03em);
+    @include text(28px, 700, 1.18, 0.03em);
+
+    @media screen and (min-width: 1200px) {
+    @include text(36px, bold, 1.17, 0.03em)
+    }
+
     font-family: Roboto;
     text-align: center;
     color: var(--basic-color);
