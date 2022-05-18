@@ -105,7 +105,8 @@ img {
   margin-left: auto;
   width: 40px;
   height: 40px;
-  outline: none;
+  border: none;
+  background-color: transparent;
   background-image: url("../images/menu_40px.png");
 }
 @media screen and (min-width: 768px) {
@@ -120,7 +121,8 @@ img {
   right: 15px;
   width: 40px;
   height: 40px;
-  outline: none;
+  border: none;
+  background-color: transparent;
   background-image: url("../images/close_40px.png");
 }
 @media screen and (min-width: 768px) {
@@ -431,6 +433,9 @@ img {
     display: flex;
     text-align: left;
   }
+  .footer-list__contacts {
+    width: 231px;
+  }
   .footer-list__cont {
     margin-right: 70px;
     margin-left: 0;
@@ -600,6 +605,11 @@ img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
+@media screen and (min-width: 1200px) {
+  .subscribe-form__input {
+    margin-right: 12px;
+  }
+}
 
 .visually-hidden {
   position: absolute;
@@ -708,8 +718,11 @@ img {
   cursor: pointer;
 }
 
-.features {
-  padding-bottom: 0;
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-top: 94px;
+    padding-bottom: 0;
+  }
 }
 @media screen and (min-width: 768px) {
   .features__list {
@@ -723,14 +736,23 @@ img {
   margin-right: 15px;
   margin-left: 15px;
 }
+.features__item:not(:last-child) {
+  margin-bottom: 30px;
+}
 @media screen and (min-width: 768px) {
   .features__item {
     width: calc(50% - 30px);
+  }
+  .features__item:nth-last-child(-n+2) {
+    margin-bottom: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
   .features__item {
     width: calc(25% - 30px);
+  }
+  .features__item:nth-child(-n+4) {
+    margin-bottom: 0px;
   }
 }
 .features__cont {
@@ -772,7 +794,6 @@ img {
 }
 .features__text--properties {
   margin-top: 10px;
-  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 1199px) {
@@ -825,15 +846,13 @@ img {
   }
 }
 
-.team-list {
-  margin-right: -15px;
-  margin-left: -15px;
-}
 @media screen and (min-width: 768px) {
   .team-list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
   }
 }
 .team-list--properties {
@@ -948,8 +967,13 @@ img {
   }
 }
 .client-list--properties {
-  margin-top: 50px;
+  margin-top: 30px;
   justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .client-list--properties {
+    margin-top: 50px;
+  }
 }
 .client-list__item {
   display: flex;

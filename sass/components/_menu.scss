@@ -3,7 +3,8 @@
     margin-left: auto;
     width: 40px;
     height: 40px;
-    outline: none;
+    border: none; 
+    background-color: transparent;
     background-image: url("../images/menu_40px.png");
     @media screen and (min-width: 768px) {
         display: none;
@@ -16,7 +17,8 @@
     right: 15px;
     width: 40px;
     height: 40px;
-    outline: none;
+    border: none; 
+    background-color: transparent;
     background-image: url("../images/close_40px.png");
     @media screen and (min-width: 768px) {
             display: none;

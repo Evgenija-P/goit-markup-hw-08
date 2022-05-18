@@ -1,7 +1,11 @@
 .features {
-    padding-bottom: 0;
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 0;
+    }
 
     &__list {
+
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
@@ -12,14 +16,23 @@
     &__item {
         margin-right: 15px;
         margin-left: 15px;
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
 
         @media screen and (min-width: 768px) {
-            width: calc(100% / 2 - 30px);
+        width: calc(100% / 2 - 30px);
+        &:nth-last-child(-n + 2) {
+        margin-bottom: 0px;
+            }
 
         }
 
         @media screen and (min-width: 1200px) {
         width: calc(100% / 4 - 30px);
+        &:nth-child(-n + 4) {
+        margin-bottom: 0px;
+        }
         }
         }
 
@@ -61,7 +74,6 @@
 
         &--properties {
             margin-top: 10px;
-            margin-bottom: 30px;
         }
     }
 }

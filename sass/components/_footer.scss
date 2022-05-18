@@ -3,8 +3,6 @@
     padding-top: 60px;
     padding-bottom: 60px;
     text-align: center;
-    // margin-left: auto;
-    // margin-right: auto;
 
     &-list {
     @media screen and (min-width: 768px) {
@@ -17,6 +15,10 @@
     }
 
     @media screen and (min-width: 1200px) {
+        &__contacts {
+            width: 231px;
+        }
+
         &__cont {
             margin-right: 70px;
             margin-left: 0;
